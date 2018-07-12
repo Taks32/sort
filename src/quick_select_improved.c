@@ -21,7 +21,8 @@ int quick_select(int A[], int n, int k){
       A[i] = tmp;
       j++;
     }else if (A[i] == pivot) {
-      A[i] = A[h];
+      A[i] = A[j];
+      A[j] = A[h];
       h++;
       j++;
     }
